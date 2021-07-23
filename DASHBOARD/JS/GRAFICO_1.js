@@ -45,14 +45,14 @@ Highcharts.chart('container', {
         opposite: true
     }],
     tooltip: {
-        shared: true
+        shared: false
     },
     legend: {
         layout: 'vertical',
         align: 'left',
         x: 120,
         verticalAlign: 'top',
-        y: 100,
+        y: 120,
         floating: true,
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || // theme

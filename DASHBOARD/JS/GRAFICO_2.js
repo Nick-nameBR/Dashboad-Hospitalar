@@ -37,7 +37,7 @@ Highcharts.chart('container2', {
     legend: {
         layout: 'vertical',
         align: 'right',
-        verticalAlign: 'down',
+        verticalAlign: 'flex-end',
         x: -40,
         y: 80,
         floating: true,
