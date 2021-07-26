@@ -13,6 +13,7 @@
 		if (isset($usuario))
 		{
 			$user->login($usuario,$senha);
+			header("../DASHBOARD.php");
 		}
 		else
 		{
