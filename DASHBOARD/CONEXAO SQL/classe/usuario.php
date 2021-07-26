@@ -41,10 +41,10 @@ class Usuario
 
 
 
-	public function loadById($id)
+	public function loadById($login)
 	{
 		$sql =new Sql();
-		$results=$sql->select("SELECT*FROM usuario WHERE id= :ID",array(":ID"=>$id));
+		$results=$sql->select("SELECT*FROM usuario WHERE login= :LOGIN",array(":LOGIN"=>$login));
 
 		if (count($results) > 0){
 
