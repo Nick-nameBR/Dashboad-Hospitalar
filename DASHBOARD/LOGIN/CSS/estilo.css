@@ -3,8 +3,8 @@
 	padding: 0px;
 }
 body{
-	background-color: #ffd9b3;
-	font-family: garamond;
+	background: linear-gradient(to top, #0099ff 0%, #ffffff 100%);
+	font-family: Copperplate;
 }
 
 input {
@@ -31,8 +31,25 @@ div#corpo-form h1{
 	padding: 20px;
 }
 
+a1{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+a{
+	color: blue;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+
 input[type=submit] {
-	background-color: #9f9fdf;
+	background-color: #ff8080;
 	cursor:  pointer;
 }
 
