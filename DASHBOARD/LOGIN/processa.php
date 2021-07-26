@@ -1,38 +1,35 @@
 <?php 
-	require_once ("classe/usuario.php");
+	require_once ("../CONEXAO SQL/config.php");
+	require_once ("../CONEXAO SQL/classe/sql.php");
+	require_once ("../CONEXAO SQL/classe/usuario.php");
+
 	$user=new Usuario;
 
 	if(isset($_POST['usuario']))
 	{
 		$usuario = addslashes($_POST['usuario']);
 		$senha = addslashes($_POST['senha']);
-		$confirmasenha = addslashes($_POST['confsenha']);
+		$confsenha = addslashes($_POST['confsenha']);
 
-		if(!empty($usuario) && !empty($senha) && !empty(confirmasenha))
+		if(!empty($usuario) && !empty($senha) && !empty($confsenha))
 		{
-			$user->conectar("dashboard","localhost","host","");
-			if($user->$menssagem =="")
+			if ($senha === $confsenha)
 			{
-				if($senha ===$confirmasenha)
-				{
-					$user->alterar($usuario,$senha);
-				}
-				else
-				{
-					echo "As senha não estão iguais.";
-				}
+				$user->loadById($usuario);
+				$user->update($senha);
 			}
 			else
 			{
-				echo "Erro".$user->$menssagem;
+				echo "As senhas digitadas não são iguais.";
 			}
 		}
-		else
+		else 
 		{
-			echo "É necessário o preenchimento de todos os campos!";
+			echo "Todos os campos devem ser preenchidos.";
 		}
 	}
-	else{
-
+	else
+	{
+		
 	}
 ?>
