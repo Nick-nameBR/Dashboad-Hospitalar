@@ -20,16 +20,19 @@
 			}
 			else
 			{
-				echo "As senhas digitadas não são iguais.";
+				$erro="Senha informada não são iguais, tente novamente.";
+				echo "<script type='text/javascript'>alert('$erro');</script>";
 			}
 		}
 		else 
 		{
-			echo "Todos os campos devem ser preenchidos.";
+
+			$erro2= "Todos os campos devem ser preenchidos.";
+			echo "<script type='text/javascript'>alert('$erro2');</script>";
 		}
 	}
 	else
 	{
-		
+
 	}
 ?>

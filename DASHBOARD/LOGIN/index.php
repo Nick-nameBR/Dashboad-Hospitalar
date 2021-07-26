@@ -8,7 +8,7 @@
 	<body>
 		<div id="corpo-form">
 			<h1>Login Dashboard</h1>
-			<form method="POST" action="usuario_login.php" >
+			<form method="POST" action="usuario_login.php">
 			<input type="login" name="usuario" title="Coloque seu Usuario" placeholder=" Usuario">
 			<input type="password" name="senha" title="Informe sua senha" placeholder=" Senha" minlength="6" maxlength="10">
 			<input type="submit" value="Acessar">
