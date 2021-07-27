@@ -10,8 +10,8 @@
 			<h1>Trocar a Senha</h1>
 			<form method="POST" action="processa.php">
 			<input type="Login" name="usuario" title="Informe o seu usuario" placeholder=" Usuario">
-			<input type="password" name="senha" placeholder=" Nova Senha" minlength="6" maxlength="10">
-			<input type="password" name="confsenha" placeholder=" Confirmar Nova Senha" minlength="6" maxlength="10">
+			<input type="password" onpaste="return false" ondrop="return false" name="senha"  placeholder=" Nova Senha" minlength="6" maxlength="10">
+			<input type="password" onpaste="return false" ondrop="return false" name="confsenha" placeholder=" Confirmar Nova Senha" minlength="6" maxlength="10">
 			<input type="submit" title="Clique para confirmar alteração" value="Alterar">
 		</div>
 	</body>
