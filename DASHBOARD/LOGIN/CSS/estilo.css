@@ -75,7 +75,7 @@ div#mensagem_sucesso
 	margin: 10px auto;
 }
 
-div.mensagem_erro{
+div#mensagem_erro{
 	width: 420px;
 	margin: 10px auto;
 	padding: 10px;

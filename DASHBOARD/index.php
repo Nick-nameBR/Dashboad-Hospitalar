@@ -1,13 +1,4 @@
-<!DOCTYPE html>
 <html>
-   <?php 
-      session_start();
-      if(!isset($_SESSION ['login']))
-      {
-         header("location: LOGIN/index.php");
-         exit;
-      }
-   ?>
    <head>
       <link rel="stylesheet"  href="CSS\GRAFICO_1.css" /> 
       <link rel="stylesheet"  href="CSS\GRAFICO_2.css" /> 

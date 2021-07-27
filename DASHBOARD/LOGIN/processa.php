@@ -17,23 +17,17 @@
 			{
 				$user->loadById($usuario);
 				$user->update($senha);
-				?>
-				<div id="mensagem_sucesso">Senha Alterada com sucesso!</div>
-				<?php
 
+				echo '<script>alert("Senha Alterada com Sucesso!")</script>';
 			}
 			else
 			{
-				?>
-				<div class="mensagem_erro">A senha informada não são compatíveis.</div>
-				<?php
+				echo '<script>alert("A senha informada não são iguais")</script>';
 			}
 		}
 		else 
 		{
-			?>
-			<div class="mensagem_erro">Todos os campos devem ser preenchidos.</div>
-			<?php
+			echo '<script>alert("Todos os campos devem ser preenchidos.")</script>';
 		}
 	}
 	else
