@@ -1,43 +1,36 @@
-Highcharts.chart('container', {
+Highcharts.chart('container1', {
     chart: {
-        Type: 'xy'
+        zoomType: 'xy'
     },
     title: {
-        text: 'Taxa de sobrevida por idade gestacional (1994-2004)'
+        text: 'Taxa de Sobrevida por Idade Gestacional (1994-2004)'
     },
-  
     xAxis: [{
-        categories: ['<28','28-31','32-36','37-41'],
+        categories: ['<24', '28-31', '32-36', '37-41'],
         crosshair: true
     }],
-
     yAxis: [{ // Primary yAxis
         labels: {
-            format:'',
-            
+            format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[1]
+                color: '#ff4d4d'
             }
         },
         title: {
-            text: 'Nascidos',
+            text: 'Obitos',
             style: {
-                color: Highcharts.getOptions().colors[1]
+                color: '#ff4d4d'
             }
         }
-       
-        
-    }
-    ,
-     { // Secondary yAxis
+    }, { // Secondary yAxis
         title: {
-            text: 'Obitos',
+            text: 'Nascidos',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
         },
         labels: {
-         
+            format: '{value}',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
@@ -45,48 +38,29 @@ Highcharts.chart('container', {
         opposite: true
     }],
     tooltip: {
-        shared: false
+        shared: true
     },
     legend: {
         layout: 'vertical',
         align: 'left',
         x: 120,
         verticalAlign: 'top',
-        y: 120,
+        y: 100,
         floating: true,
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || // theme
             'rgba(255,255,255,0.25)'
     },
-    
-    series: [
+    series: [{
+        name: 'Nascidos',
+        type: 'column',
+        yAxis: 1,
+        data: [22, 32, 82, 15]
+    }, 
     {
         name: 'Obitos',
-        type: 'column',
-        data: [30, 35, 75, 10],
-        tooltip: {
-            shared: true
-        }},
-         {
-        name: 'Nascidos',
         type: 'spline',
-        yAxis: 1,
-        data: [22, 40, 82, 20],
-        tooltip: {
-            shared: true
-        }
-    
-    }],
-    plotOptions: {
-        spline: {
-            dataLabels: {
-                enabled: true
-            }
-        },
-        column: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    }
+        data: [30, 35, 75, 10],
+        color: '#ff4d4d'
+    }]
 });

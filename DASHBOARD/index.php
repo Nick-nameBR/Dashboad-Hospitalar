@@ -9,13 +9,13 @@
    <body>
      <hr class="hr3"></hr>
       <figure class="highcharts-figure">
-         <div id="container"></div>
+         <div id="container1"></div>
          <hr class="hr3"></hr>
          <div id="container2"></div>
          <hr class="hr3"></hr>
          <div id="container3"></div>
       </figure>
-      
+  
      <script src="https://code.highcharts.com/highcharts.js"></script>
      <script src="https://code.highcharts.com/modules/export-data.js"></script>
      <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -24,6 +24,5 @@
      <script src="JS\GRAFICO_1.js"></script>
      <script src="JS\GRAFICO_2.js"></script>
      <script src="JS\GRAFICO_3.js"></script>
-     <script src="web.config"></script>     
    </body>
 </html>

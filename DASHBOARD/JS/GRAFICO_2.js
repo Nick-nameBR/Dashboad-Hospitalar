@@ -3,13 +3,13 @@ Highcharts.chart('container2', {
         type: 'bar'
     },
     title: {
-        text: 'Taxa de Mortalidade Neonatal'
+        text: 'Historic World Population by Region'
     },
     subtitle: {
-        text: 'Source: <a href="https://odsbrasil.gov.br/objetivo3/indicador322">odsbrasil.gov</a>'
+        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
     },
     xAxis: {
-        categories: ['Norte', 'Nordeste', 'Sul', 'Sudeste', 'Centro-Oeste'],
+        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
         title: {
             text: null
         }
@@ -17,15 +17,15 @@ Highcharts.chart('container2', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Taxa',
-            align: 'low'
+            text: 'Population (millions)',
+            align: 'high'
         },
         labels: {
             overflow: 'justify'
         }
     },
     tooltip: {
-        valueSuffix: ' mortes'
+        valueSuffix: ' millions'
     },
     plotOptions: {
         bar: {
@@ -37,7 +37,7 @@ Highcharts.chart('container2', {
     legend: {
         layout: 'vertical',
         align: 'right',
-        verticalAlign: 'flex-end',
+        verticalAlign: 'top',
         x: -40,
         y: 80,
         floating: true,
@@ -50,10 +50,18 @@ Highcharts.chart('container2', {
         enabled: false
     },
     series: [{
-        name: 'Ano 2000',
-        data: [21.2, 21.3, 10.8, 13.7, 15]
+        name: 'Year 1800',
+        data: [107, 31, 635, 203, 2],
+        color: 'red'
     }, {
-        name: 'Ano 2015',
-        data: [11.3, 11.1, 7.5, 8.2, 7.5]
+        name: 'Year 1900',
+        data: [133, 156, 947, 408, 6],
+        color: '#ffb366'
+    }, {
+        name: 'Year 2000',
+        data: [814, 841, 3714, 727, 31]
+    }, {
+        name: 'Year 2016',
+        data: [1216, 1001, 4436, 738, 40]
     }]
 });
