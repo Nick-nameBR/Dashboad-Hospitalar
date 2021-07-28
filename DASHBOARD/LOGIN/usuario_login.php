@@ -17,7 +17,7 @@
 		}
 		else
 		{
-			$user->Exception();
+			echo '<script>alert("Login e/ou senha incorretos.")</script>';
 		}
 	}
 	else

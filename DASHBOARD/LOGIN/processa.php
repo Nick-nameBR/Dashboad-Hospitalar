@@ -19,15 +19,18 @@
 				$user->update($senha);
 
 				echo '<script>alert("Senha Alterada com Sucesso!")</script>';
+				header("location: index.php");
 			}
 			else
-			{
+			{		
 				echo '<script>alert("A senha informada não são iguais")</script>';
+				header("location:troca_senha.php");
 			}
 		}
 		else 
 		{
 			echo '<script>alert("Todos os campos devem ser preenchidos.")</script>';
+
 		}
 	}
 	else
