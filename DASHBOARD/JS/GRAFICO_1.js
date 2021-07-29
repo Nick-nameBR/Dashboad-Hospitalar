@@ -5,11 +5,14 @@ Highcharts.chart('container1', {
     title: {
         text: 'Taxa de Sobrevida por Idade Gestacional (1994-2004)'
     },
+    subtitle: {
+        text: ''
+    },
     xAxis: [{
         categories: ['<24', '28-31', '32-36', '37-41'],
         crosshair: true
     }],
-    yAxis: [{ // Primary yAxis
+    yAxis: [{ // Primeiro yAxis
         labels: {
             format: '{value}',
             style: {
@@ -22,7 +25,9 @@ Highcharts.chart('container1', {
                 color: '#ff4d4d'
             }
         }
-    }, { // Secondary yAxis
+    },
+    
+    { // Segundo yAxis
         title: {
             text: 'Nascidos',
             style: {
