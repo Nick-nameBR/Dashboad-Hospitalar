@@ -1,4 +1,3 @@
-// Build the chart
 Highcharts.chart('container3', {
     chart: {
         plotBackgroundColor: null,
@@ -40,7 +39,7 @@ Highcharts.chart('container3', {
             y: 11.84
         }, {
             name: 'Firefox',
-            y: 10.85
+            y: 10.50
         }, {
             name: 'Edge',
             y: 4.67

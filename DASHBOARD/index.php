@@ -7,6 +7,8 @@
    </head>
 
    <body>
+      <script src="web.config"></script>
+      <input name="Sair" type="button" id="botao-sair" onclick="LOGIN\sair_login.php" value="Sair" />
       <hr class="hr3"></hr>
       <figure class="highcharts-figure">
          <div id="container1"></div>
@@ -20,9 +22,10 @@
       <script src="https://code.highcharts.com/modules/export-data.js"></script>
       <script src="https://code.highcharts.com/modules/accessibility.js"></script>
       <script src="https://code.highcharts.com/modules/exporting.js"></script>
-      
+
       <script src="JS\GRAFICO_1.js"></script>
       <script src="JS\GRAFICO_2.js"></script>
       <script src="JS\GRAFICO_3.js"></script>
+
    </body>
 </html>

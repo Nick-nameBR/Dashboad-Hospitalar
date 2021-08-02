@@ -9,7 +9,7 @@ Highcharts.chart('container2', {
         text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
     },
     xAxis: {
-        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+        categories: ['Norte', 'Nordeste', 'Sul', 'Sudeste', 'Centro-Oeste'],
         title: {
             text: null
         }
@@ -17,15 +17,15 @@ Highcharts.chart('container2', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)',
-            align: 'high'
+            text: 'taxa',
+            align: 'low'
         },
         labels: {
             overflow: 'justify'
         }
     },
     tooltip: {
-        valueSuffix: ' millions'
+        valueSuffix: ' mortes'
     },
     plotOptions: {
         bar: {
@@ -50,18 +50,12 @@ Highcharts.chart('container2', {
         enabled: false
     },
     series: [{
-        name: 'Year 1800',
-        data: [107, 31, 635, 203, 2],
+        name: 'Ano 2000',
+        data: [21.2, 21.3, 10.8, 13.7, 15],
         color: 'red'
     }, {
-        name: 'Year 1900',
-        data: [133, 156, 947, 408, 6],
+        name: 'Ano 2015',
+        data: [11.3, 11.1, 7.5, 8.2, 7.5],
         color: '#ffb366'
-    }, {
-        name: 'Year 2000',
-        data: [814, 841, 3714, 727, 31]
-    }, {
-        name: 'Year 2016',
-        data: [1216, 1001, 4436, 738, 40]
     }]
 });

@@ -1,5 +1,4 @@
 <?php 
-	require_once ("../CONEXAO SQL/config.php");
 	require_once ("../CONEXAO SQL/classe/sql.php");
 	require_once ("../CONEXAO SQL/classe/usuario.php");
 
