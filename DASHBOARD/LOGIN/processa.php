@@ -23,17 +23,21 @@
 			else
 			{		
 				echo '<script>alert("A senha informada não são iguais")</script>';
+				exit;
 				header("location:troca_senha.php");
 			}
 		}
 		else 
 		{
 			echo '<script>alert("Todos os campos devem ser preenchidos.")</script>';
+			exit;
 
 		}
 	}
 	else
 	{
-
+		echo '<script>alert("Usuario inexistente.")</script>';
+		header("location: .../dashboard.html");
+		exit;
 	}
 ?>

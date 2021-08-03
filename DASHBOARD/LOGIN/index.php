@@ -8,8 +8,8 @@
 	<body>
 		<div id="corpo-form">
 			<h1>Dashboard Hospitalar</h1>
-			<form method="POST" action="usuario_login.php">
-			<input type="login" name="usuario" title="Coloque seu Usuario" placeholder=" Usuario">
+			<form action="logar.php" method="POST">
+			<input type="login" name="login" title="Coloque seu Usuario" placeholder=" Usuario">
 			<input type="password" onpaste="return false" ondrop="return false"  name="senha" title="Informe sua senha" placeholder=" Senha" minlength="6" maxlength="10">
 			<input type="submit" value="Acessar">
 			<a1>Esqueceu a senha?<a1>

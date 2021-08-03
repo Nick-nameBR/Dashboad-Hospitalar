@@ -1,42 +1,22 @@
 <?php 
 
-class Sql extends PDO {
-	private $conn;
+	session_start();
 
+	$localhost="localhost";
+	$user="root";
+	$password="";
+	$DB="dashboard";
 
-	public function __construct(){
-		$this->conn = new PDO("mysql:dbname=dashboard;host=localhost", "root", "");
-	}
+	global $pdo;
 
-	private function setParams($statment,$parameters =array()){
-		foreach ($parameters as $key => $value) {
-
-			$this->setParam($statment,$key, $value);
-		}
-	}
-
-	private function setParam($statment,$key,$value){
-
-		$statment->bindParam($key,$value);
-	}
-
-
-	public function query($rawQuery,$params=array()){
-		$stmt=$this->conn->prepare($rawQuery);
-
-		$this->setParams($stmt,$params);
-
-		$stmt->execute();
-
-		return $stmt;
-	}
-
-	public function select($rawQuery,$params = array()):array
+	try
 	{
-		$stmt = $this->query($rawQuery,$params);
-
-		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$pdo = new PDO("mysql:dbname=".$DB.";host=".$localhost, $user, $password);
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
-}
-
+	catch(PDOException $e)
+	{
+		echo "ERRO: " .$e->getMessage();
+		exit;
+	}
 ?>

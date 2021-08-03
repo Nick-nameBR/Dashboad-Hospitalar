@@ -31,24 +31,24 @@ Highcharts.chart('container3', {
         colorByPoint: true,
         data: [{
             name: 'Chrome',
-            y: 61.41,
+            y: 12.50,
             sliced: true,
             selected: true
         }, {
             name: 'Internet Explorer',
-            y: 11.84
+            y: 25.00
         }, {
             name: 'Firefox',
-            y: 10.50
+            y: 25.00
         }, {
             name: 'Edge',
-            y: 4.67
+            y: 25.00
         }, {
             name: 'Safari',
-            y: 4.18
+            y: 25.00
         }, {
             name: 'Other',
-            y: 7.05
+            y: 12.50
         }]
     }]
 });
