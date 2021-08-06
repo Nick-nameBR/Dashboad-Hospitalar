@@ -3,8 +3,7 @@
 	padding: 0px;
 }
 body{
-	background: linear-gradient(to top, #0099ff 0%, #ffffff 100%);
-	font-family: Copperplate;
+	background: linear-gradient(to top, #FFDAB9 0%, #FAF0E6 100%);
 }
 
 input {
@@ -26,9 +25,11 @@ div#corpo-form{
 	margin: 150px auto 0px auto;
 }
 
-div#corpo-form h1{
-	text-align: center;
+div#corpo-form img{
+	height: 120px;
+	width: 350px;
 	padding: 20px;
+	text-align: center;
 }
 
 a1{

@@ -1,31 +1,33 @@
 <?php 
 
-	if (isset($_POST['login']) && !empty($_POST['login']) && isset($_POST['senha']) && !empty($_POST['senha']))
+
+	if(isset($_POST['login']))
 	{
-		require '../CONEXAO SQL/classe/sql.php';
-		require '../CONEXAO SQL/classe/usuario.php';
+		
+		require_once ("../CONEXAO SQL/classe/sql.php");
+		require_once ("../CONEXAO SQL/classe/usuario.php");
 
 		$user= new Usuario();
-
-
-		$login = addslashes($_POST['login']);
+		$usuario = addslashes($_POST['login']);
 		$senha = addslashes($_POST['senha']);
-
-		if($user->login($login,$senha)==true)
+		
+		if(!empty($usuario) && !empty($senha))
 		{
-			if(isset($_SESSION['Usuario']))
-			{
-				header('location:../dashboard.php');
+			if($user->logar($login,$senha)){
+
+				header("location: ../index.php");	
 			}
 			else{
-				header('location:index.php');
-			}
+				echo"usuario ou senha inválido";
+				header("location: login.php");	
+			}		
 		}
 		else{
-			header('location:index.php');
+			echo"preencha todos os campos";
+			header("location: login.php");
 		}
 	}
 	else{
-		header('location:index.php');
+
 	}
 ?>
