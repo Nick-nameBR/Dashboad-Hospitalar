@@ -6,7 +6,10 @@ Highcharts.chart('container3', {
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares in January, 2018'
+        text: 'Tipo de Parto'
+    },
+    subtitle: {
+        text: 'Mês de Novembro | 2021'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -21,34 +24,24 @@ Highcharts.chart('container3', {
             allowPointSelect: true,
             cursor: 'pointer',
             dataLabels: {
-                enabled: false
-            },
-            showInLegend: true
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
         }
     },
     series: [{
-        name: 'Brands',
+        name: 'Valor Percentual',
         colorByPoint: true,
         data: [{
-            name: 'Chrome',
-            y: 12.50,
+            name: 'Césareo',
+            y: 61.41,
             sliced: true,
-            selected: true
+            selected: true,
+            color: '#FFA07A',
         }, {
-            name: 'Internet Explorer',
-            y: 25.00
-        }, {
-            name: 'Firefox',
-            y: 25.00
-        }, {
-            name: 'Edge',
-            y: 25.00
-        }, {
-            name: 'Safari',
-            y: 25.00
-        }, {
-            name: 'Other',
-            y: 12.50
+            name: 'Vaginal',
+            y: 11.84,
+            color: '#FFEBCD',
         }]
     }]
 });

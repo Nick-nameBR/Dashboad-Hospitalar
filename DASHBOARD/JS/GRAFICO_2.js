@@ -3,10 +3,10 @@ Highcharts.chart('container2', {
         type: 'bar'
     },
     title: {
-        text: 'Historic World Population by Region'
+        text: 'Taxa de Mortalidade Neonatal'
     },
     subtitle: {
-        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        text: 'Source: <a href="https://odsbrasil.gov.br/objetivo3/indicador322">odsbrasil.gov</a>'
     },
     xAxis: {
         categories: ['Norte', 'Nordeste', 'Sul', 'Sudeste', 'Centro-Oeste'],
@@ -17,7 +17,7 @@ Highcharts.chart('container2', {
     yAxis: {
         min: 0,
         title: {
-            text: 'taxa',
+            text: 'Taxa',
             align: 'low'
         },
         labels: {
@@ -37,7 +37,7 @@ Highcharts.chart('container2', {
     legend: {
         layout: 'vertical',
         align: 'right',
-        verticalAlign: 'top',
+        verticalAlign: 'flex-end',
         x: -40,
         y: 80,
         floating: true,
@@ -52,10 +52,10 @@ Highcharts.chart('container2', {
     series: [{
         name: 'Ano 2000',
         data: [21.2, 21.3, 10.8, 13.7, 15],
-        color: 'red'
+        color: '#FFA07A',
     }, {
         name: 'Ano 2015',
         data: [11.3, 11.1, 7.5, 8.2, 7.5],
-        color: '#ffb366'
+         color: '#FFEBCD',
     }]
 });
