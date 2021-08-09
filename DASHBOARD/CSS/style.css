@@ -1,8 +1,7 @@
     *{
         margin: 0;
         padding: 0;
-        font-family: Helvetica, Bookman;
-        
+        font-family: Helvetica, Bookman;  
     }
 
     header{
@@ -11,7 +10,6 @@
         width: 1350px;
         padding: 2px;
         text-align: center;
-
     }
 
     body{
@@ -25,28 +23,26 @@
 
     footer {
         clear: both;
-         background: linear-gradient(to bottom, #FAF0E6  0%,  #FFDAB9 100%);
-         color: #FA8072;
+        background: linear-gradient(to bottom, #FAF0E6  0%,  #FFDAB9 100%);
+        color: #FA8072;
         font-family: Helvetica, Bookman;
         height: 30px;
         width: 1316px;
         text-align: right;
         padding: 20px;
-        font-size: 15px;
-        
-
+        font-size: 15px;  
     }
 
-        .container {
-            width: 920px;
-            margin:  0 auto;
+    .container {
+        width: 920px;
+        margin:  0 auto;
     }
- .container8 {
-             width: 920px;
-            margin:  0 auto;
+    .container8 {
+        width: 920px;
+        margin:  0 auto;
     }
 
-.highcharts-figure, .highcharts-data-table table {
+    .highcharts-figure, .highcharts-data-table table {
         min-width: 320px; 
         max-width: 800px;
         margin: 1em auto;
@@ -141,9 +137,9 @@
         margin: 1em auto;
     }
 
-    #container3 {
+    #container6 {
         width:50%;
-        min-height:280px;
+        min-height:250px;
         float: left;
         display: inline-block;
     }

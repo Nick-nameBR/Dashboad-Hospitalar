@@ -12,19 +12,19 @@
 
 		if(!empty($usuario) && !empty($senha) && !empty($confsenha))
 		{
-			if ($senha === $confsenha)
+			if ($senha == $confsenha)
 			{
 				$user->loadById($usuario);
 				$user->update($senha);
 
 				echo '<script>alert("Senha Alterada com Sucesso!")</script>';
-				header("location: index.php");
+				header("location:login.php");
 			}
 			else
 			{		
 				echo '<script>alert("A senha informada não são iguais")</script>';
 				exit;
-				header("location:troca_senha.php");
+				header("location:alterar_senha.php");
 			}
 		}
 		else 
@@ -37,7 +37,7 @@
 	else
 	{
 		echo '<script>alert("Usuario inexistente.")</script>';
-		header("location: .../dashboard.html");
+		header("location: .../login.php");
 		exit;
 	}
 ?>

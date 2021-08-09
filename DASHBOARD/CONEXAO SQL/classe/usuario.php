@@ -58,6 +58,7 @@ class Usuario
 		//VALIDA SE TEM REGISTRO NO BANCO DE DADOS
 		if (count($results) > 0){
 			$this->setData($results[0]);
+			session_start();
 		}
 		//SE NÃO TIVER, RETORNA ERRO.
 		else {
