@@ -1,8 +1,8 @@
 <?php 
-	require_once ("../CONEXAO SQL/classe/sql.php");
-	require_once ("../CONEXAO SQL/classe/usuario.php");
+	require_once ("..\CONEXAO SQL\classe\usuario.php");
+	require_once("..\CONEXAO SQL\config.php");
 
-	$user=new Usuario;
+	$user=new Usuario();
 
 	if(isset($_POST['usuario']))
 	{
@@ -14,24 +14,22 @@
 		{
 			if ($senha == $confsenha)
 			{
-				$user->loadById($usuario);
+
+				$user->loadByLogin($usuario);
 				$user->update($senha);
 
 				echo '<script>alert("Senha Alterada com Sucesso!")</script>';
-				header("location:login.php");
+				//header("location:login.php");
 			}
 			else
 			{		
 				echo '<script>alert("A senha informada não são iguais")</script>';
-				exit;
-				header("location:alterar_senha.php");
 			}
 		}
 		else 
 		{
 			echo '<script>alert("Todos os campos devem ser preenchidos.")</script>';
 			exit;
-
 		}
 	}
 	else
