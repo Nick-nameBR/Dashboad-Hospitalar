@@ -13,12 +13,14 @@
 		if (!empty($usuario) && !empty($senha)){
 
 			$user->login($usuario,$senha);
-			session_start();
 			header("location: ..\index.php");
 		}
 		else{
-			echo"todos os campos devem ser preenchidos";
-		}
+			?>
+			todos os campos devem ser preenchidos;
+			<?php
+			header('location:login.php');
+		}	
 	}
 	else{
 
