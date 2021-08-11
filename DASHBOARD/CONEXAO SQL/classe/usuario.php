@@ -1,6 +1,7 @@
 <?php 
 
 	require_once ("sql.php");
+	session_start();
 
 	class Usuario 
 	{
@@ -60,13 +61,15 @@
 			//VALIDA SE TEM REGISTRO NO BANCO DE DADOS
 			if (count($results) > 0){
 				$this->setData($results[0]);
-				session_start();
-				$_SESSION['id_usuario']="true";
+
+				$_SESSION['usuario'] = $usuario;
+				$_SESSION['senha'] = $senha;
 			}
 
 			//SE NÃO TIVER, RETORNA ERRO.
 			else {
-				throw new Exception ("Login e/ou senha inválidos.");
+				unset($_SESSION['usuario']);
+				unset($_SESSION['senha']);
 			}
 		}
 
