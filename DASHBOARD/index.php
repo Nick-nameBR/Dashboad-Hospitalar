@@ -12,6 +12,15 @@
          }
 
          $logado = $_SESSION['usuario'];
+         var_dump($logado);
+
+         /*if(isset($logado)){
+
+            session_destroy();
+            header("location:LOGIN\login.php");
+            exit();   
+         }*/
+         
       ?>
       <meta charset="utf-8">
       <script src="web.config"></script>
