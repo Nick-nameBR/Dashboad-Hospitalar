@@ -2,6 +2,17 @@
 <html lang ="pt-br">
 
    <head>
+      <?php
+         session_start();
+         if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == true))
+         {
+            unset($_SESSION['usuario']);
+            unset($_SESSION['senha']);
+            header('location:LOGIN\login.php');
+         }
+
+         $logado = $_SESSION['usuario'];
+      ?>
       <meta charset="utf-8">
       <script src="web.config"></script>
       <title>Dashboard | Neonatal</title>
@@ -11,6 +22,9 @@
 
    <header>
       <div class="container">
+         <div id="sair">
+            <input type="submit" value="Sair">
+         </div>
          <img src="logos\logo4.png">
       </div>
    </header>
