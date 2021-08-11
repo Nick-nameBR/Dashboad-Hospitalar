@@ -8,6 +8,9 @@
 	$user->login("22487","nikolas2021"); 
 	echo "<br>";
 	echo "Logado com sucesso!";
+	echo "<br>";
+	var_dump($_SESSION['usuario']);
+	var_dump($_SESSION['senha']);
 
 
 
