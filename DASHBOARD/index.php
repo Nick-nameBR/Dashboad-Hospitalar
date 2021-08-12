@@ -12,7 +12,7 @@
          }
 
          $logado = $_SESSION['usuario'];
-         var_dump($logado);
+         //var_dump($logado);
 
          /*if(isset($logado)){
 
@@ -32,7 +32,7 @@
    <header>
       <div class="container">
          <div id="sair">
-            <input type="submit" value="Sair">
+            <button type="button" onclick="window.location.href='LOGIN/logout.php'">Sair</button>
          </div>
          <img src="logos\logo4.png">
       </div>
