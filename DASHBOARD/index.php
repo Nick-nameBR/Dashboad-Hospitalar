@@ -12,15 +12,6 @@
          }
 
          $logado = $_SESSION['usuario'];
-         //var_dump($logado);
-
-         /*if(isset($logado)){
-
-            session_destroy();
-            header("location:LOGIN\login.php");
-            exit();   
-         }*/
-         
       ?>
       <meta charset="utf-8">
       <script src="web.config"></script>
@@ -32,6 +23,11 @@
    <header>
       <div class="container">
          <div id="sair">
+            <?php
+               if ($logado == true){
+                  echo "Usuário: $logado";
+               }
+            ?>
             <button type="button" onclick="window.location.href='LOGIN/logout.php'">Sair</button>
          </div>
          <img src="logos\logo4.png">
@@ -60,6 +56,6 @@
       <script src="JS\GRAFICO_4.js"></script>
       <script src="JS\GRAFICO_5.js"></script>
       
-      <footer> Dashboard Hospitalar - Dados Neonatal 2021</footer>  
+      <footer> Dashboard Hospitalar - Dados Neonatal <?php echo date("Y"); ?></footer>  
    </body>
 </html>
