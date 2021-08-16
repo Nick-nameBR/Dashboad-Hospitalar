@@ -66,7 +66,7 @@
 				$_SESSION['senha'] = $senha;
 			}
 
-			//SE NÃO TIVER, RETORNA ERRO.
+			//SE NÃO TIVER, FAZ UNSET
 			else {
 				unset($_SESSION['usuario']);
 				unset($_SESSION['senha']);
