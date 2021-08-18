@@ -5,17 +5,13 @@
     }
 
     header{
-        background: linear-gradient(to bottom, #FFDAB9 10%, #FAF0E6 100%);
+        background: linear-gradient(to bottom, #FFDAB9 10%, #FAF0E6 90%);
         height: 70px;
-        width: 1350px;
-        padding: 2px;
-        text-align: center;
+        width: 1305px;
+        padding: 2px;   
     }
 
     body{
-        /*background-image: url('fonts.png');
-        background-color: #FFDAB9 ;*/
-
         width: 90%;
         font-family: Helvetica, Bookman;
         background-color: #FAF0E6;
@@ -27,19 +23,20 @@
         color: #FA8072;
         font-family: Helvetica, Bookman;
         height: 30px;
-        width: 1316px;
+        width: 1270px;
         text-align: right;
         padding: 20px;
         font-size: 15px;  
     }
 
     /*LOGO*/
-    .container {
-        width: 920px;
-        margin:  0 auto;
+    img#logo {
+        width: 170px;
+        margin-left: 45%;
     }
 
-    #sair{
+    /*USUARIO LOGADO*/
+    #logado{
         position: absolute;
         margin-top: 22px;
         right: 30px;
