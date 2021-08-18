@@ -17,15 +17,12 @@
 			$user->setLogin($usuario);
 			$user->setSenha($senha);
 			$user->insert();
-			?>
-			<alert>Usuario cadastrado com Sucesso!</alert>
-			<?php
+
+			echo "<script>alert('Usuario cadastrado com Sucesso!');location.href=\"cadastro.php\";</script>";
 		}
 		else
 		{
-			?>
-			<alert>Preencha todos os campos.</alert>
-			<?php
+			echo "<script>alert('Preencha todos os campos!');location.href=\"cadastro.php\";</script>";
 		}	
 	}
 ?>
