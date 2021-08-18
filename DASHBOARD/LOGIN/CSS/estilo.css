@@ -48,6 +48,13 @@ a:hover{
 	text-decoration: underline;
 }
 
+h1{
+	margin-bottom: 10%;
+	font-size: 35px;
+	font-family: Helvetica, Bookman;
+	text-align: center;
+}
+
 
 input[type=submit] {
 	background-color: #ff8080;

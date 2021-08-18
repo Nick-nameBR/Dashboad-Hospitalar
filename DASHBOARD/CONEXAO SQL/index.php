@@ -4,16 +4,22 @@
 
 
 	//CARREGA UM USUARIO LOGIN E SENHA
-	$user = new Usuario();
+	/*$user = new Usuario();
 	$user->login("22487","nikolas2021"); 
 	echo "<br>";
 	echo "Logado com sucesso!";
 	echo "<br>";
 	var_dump($_SESSION['usuario']);
-	var_dump($_SESSION['senha']);
+	var_dump($_SESSION['senha']);*/
 
 
-
+	// INSERT DE USUARIO
+	/*$usuario=new Usuario();
+	$usuario->setNome("JOAO NINGUEM");
+	$usuario->setLogin("201912");
+	$usuario->setSenha("1132");
+	$usuario->insert();
+	echo $usuario;*/
 
 
 	//UPDATE DE USUARIO

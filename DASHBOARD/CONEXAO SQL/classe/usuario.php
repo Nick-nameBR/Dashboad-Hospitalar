@@ -89,6 +89,18 @@
 			$sql = new Sql();
 			$sql->query("UPDATE usuario SET senha= :SENHA WHERE login=:LOGIN",array(':SENHA'=>$this->getSenha(),':LOGIN'=>$this->getLogin()));
 		}
+
+
+		//CRIA UM USUARIO NO BANCO DE DADOS
+		public function insert(){
+			$sql= new Sql();
+			$results=$sql->select("CALL sp_usuarios_insert(:NOME,:LOGIN,:SENHA)",array(':NOME'=>$this->getNome(),':LOGIN'=>$this->getLogin(), ':SENHA'=>$this->getSenha()));
+
+			if (count($results) > 0){
+
+				$this->setData($results[0]);
+			}
+		}
 	
 
 		//TRANSFORMA EM UM JSON O RESULTADO APRESENTADO NA TELA
