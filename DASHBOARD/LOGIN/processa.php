@@ -18,24 +18,21 @@
 				$user->loadByLogin($usuario);
 				$user->update($senha);
 
-				echo '<script>alert("Senha Alterada com Sucesso!")</script>';
-				//header("location:login.php");
+				echo "<script>alert('Senha Alterada com Sucesso!');location.href=\"login.php\";</script>";
 			}
 			else
 			{		
-				echo '<script>alert("A senha informada não são iguais")</script>';
+				echo "<script>alert('As senhas não são iguais');location.href=\"alterar_senha.php\";</script>";
 			}
 		}
 		else 
 		{
-			echo '<script>alert("Todos os campos devem ser preenchidos.")</script>';
-			exit;
+			echo "<script>alert('Todos os campos devem ser preenchidos');location.href=\"alterar_senha.php\";</script>";
+			
 		}
 	}
 	else
 	{
-		echo '<script>alert("Usuario inexistente.")</script>';
-		header("location: .../login.php");
-		exit;
+		echo "<script>alert('Usuario Inexistente');location.href=\"login.php\";</script>";
 	}
 ?>
