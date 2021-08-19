@@ -60,7 +60,7 @@
 		</script>
 		
 		<div id="corpo-form">
-			<form action="cadastrar.php" method="POST">
+			<form action="MENU USUARIO\cadastrar.php" method="POST">
 			<h1>CADASTRO</h1>
 			<input type="Nome" name="nome" title="Digite seu Nome" placeholder=" Nome">
 			<input type="login" name="usuario" title="Digite um Usuario (SOMENTE NÚMEROS)" placeholder=" Usuario">
