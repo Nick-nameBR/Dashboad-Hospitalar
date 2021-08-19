@@ -92,7 +92,8 @@
 
 
 		//CRIA UM USUARIO NO BANCO DE DADOS
-		public function insert(){
+		public function insert()
+		{
 			$sql= new Sql();
 			$results=$sql->select("CALL sp_usuarios_insert(:NOME,:LOGIN,:SENHA)",array(':NOME'=>$this->getNome(),':LOGIN'=>$this->getLogin(), ':SENHA'=>$this->getSenha()));
 
@@ -103,14 +104,22 @@
 		}
 	
 
+		//DELETA O USUARIO DO BANCO DE DADOS
+		public function delete()
+		{
+			$sql = new Sql();
+			$sql->query("DELETE FROM usuario WHERE id=:ID",array(':ID'=>$this->getId()));
+		}
+
+
 		//TRANSFORMA EM UM JSON O RESULTADO APRESENTADO NA TELA
 		public function __toString()
 		{
 			return json_encode(array(
 			"id"=>$this->getId(),
 			"login"=>$this->getLogin(),
-			"senha"=>$this->getSenha(),
-			"nome"=>$this->getNome()));
+			"nome"=>$this->getNome(),
+			"senha"=>$this->getSenha()));	
 		}
 	}
 ?>

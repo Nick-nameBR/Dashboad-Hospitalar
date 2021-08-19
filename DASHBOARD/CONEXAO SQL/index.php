@@ -28,4 +28,13 @@
 	$user->update("nikolas2021");
 	echo "<br>";
 	echo "Senha alterada com sucesso!";*/
+
+
+	//DELETE DE USUARIO
+	$user=new Usuario();
+	$user->loadByLogin(13232);
+	$user->delete();
+	echo $user;
+	echo "<br>";
+	echo "USUARIO EXCLUIDO COM SUCESSO!";
 ?>
