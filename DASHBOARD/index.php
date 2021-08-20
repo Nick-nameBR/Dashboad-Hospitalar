@@ -21,7 +21,6 @@
       </head>
 
 
-
       <header>
          <input type="checkbox" id="chec">
             <label for="chec">
@@ -33,7 +32,7 @@
                   <li><a href="cadastro.php">Cadastrar Usuário</a></li>
                   <li><a href="login\alterar_senha.php">Alterar Senha</a></li>
                   <li><a href="MENU USUARIO\excluir.php">Excluir Usuário</a></li>
-                  <li><a href="">Sobre</a></li>
+                  <li><a href="sobre.php">Sobre</a></li>
                   <li><a onclick="window.location.href='LOGIN/logout.php'">Sair</a></li>
                </ul>
             </nav>
