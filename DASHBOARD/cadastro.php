@@ -27,7 +27,7 @@
             <ul>
                <li><a href="index.php">Início</a></li>
                <!--<li><a href="cadastro.php">Cadastrar Usuário</a></li>-->
-               <li><a href="">Alterar Senha</a></li>
+               <li><a href="LOGIN\alterar_senha.php">Alterar Senha</a></li>
                <li><a href="sobre.php">Sobre</a></li>
                <li><a onclick="window.location.href='LOGIN/logout.php'">Sair</a></li>
             </ul>
