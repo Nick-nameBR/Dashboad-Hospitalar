@@ -16,6 +16,7 @@
    {
       $user->loadByLogin($logado);
       $user->delete();
+      session_destroy();
       header('location:..\LOGIN\login.php');
    }
 ?>
