@@ -19,6 +19,7 @@ ul{
 img#menu{
   width: 15%;
   text-align: center;
+  cursor: pointer;
 }
 
 input[type="checkbox"]
