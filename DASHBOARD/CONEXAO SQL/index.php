@@ -31,10 +31,17 @@
 
 
 	//DELETE DE USUARIO
-	$user=new Usuario();
+	/*$user=new Usuario();
 	$user->loadByLogin(13232);
 	$user->delete();
 	echo $user;
 	echo "<br>";
-	echo "USUARIO EXCLUIDO COM SUCESSO!";
+	echo "USUARIO EXCLUIDO COM SUCESSO!";*/
+
+
+	//BUSCA DADOS GRAFICO
+	$data2015= Grafico2::select2015();
+	$data2000= Grafico2::select2000();
+	echo json_encode($data2000);
+	echo json_encode($data2015);
 ?>
