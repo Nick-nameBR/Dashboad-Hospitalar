@@ -38,8 +38,8 @@ Highcharts.chart('container2', {
         layout: 'vertical',
         align: 'right',
         verticalAlign: 'flex-end',
-        x: -40,
-        y: 80,
+        x: -10,
+        y: 120,
         floating: true,
         borderWidth: 1,
         backgroundColor:
