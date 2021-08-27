@@ -14,24 +14,24 @@
 		<title>Dashboard: Cadastro</title>
 		<link rel="stylesheet" type="text/css" href="LOGIN\CSS\estilo.css">
     	<link rel="stylesheet" type="text/css" href="CSS\style.css"/>
-      	<link rel="stylesheet" type="text/css"  href="CSS\menu.css" />
+      <link rel="stylesheet" type="text/css"  href="CSS\menu.css"/>
 	</head>
 
 
    <header>
       <input type="checkbox" id="chec">
-         <label for="chec">
-           <img id="menu" src="logos\menu1.png">
-         </label>
-         <nav>
-            <ul>
-               <li><a href="index.php">Início</a></li>
-               <!--<li><a href="cadastro.php">Cadastrar Usuário</a></li>-->
-               <li><a href="LOGIN\alterar_senha.php">Alterar Senha</a></li>
-               <li><a href="sobre.php">Sobre</a></li>
-               <li><a onclick="window.location.href='LOGIN/logout.php'">Sair</a></li>
-            </ul>
-         </nav>
+      <label for="chec">
+         <img id="menu" src="logos\menu1.png">
+      </label>
+      <nav>
+         <ul>
+            <li><a href="index.php">Início</a></li>
+            <!--<li><a href="cadastro.php">Cadastrar Usuário</a></li>-->
+            <li><a href="LOGIN\alterar_senha.php">Alterar Senha</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a onclick="window.location.href='LOGIN/logout.php'">Sair</a></li>
+         </ul>
+      </nav>
       <div class="container">
          
          <div id="logado">
@@ -58,6 +58,7 @@
   				document.getElementById('divMayus').style.visibility = 'hidden';
 			}
 		</script>
+      <!--ENCERRA AQUI-->
 		
 		<div id="corpo-form">
 			<form action="MENU USUARIO\cadastrar.php" method="POST">
