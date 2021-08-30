@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
    <html lang ="pt-br">
 
       <head>
@@ -59,6 +59,7 @@
                <div id="container3"></div>
                <div id="container4"></div>
                <div id="container2"></div>
+               <div id="container6"></div>
             </div>
          </figure>
             
@@ -67,12 +68,17 @@
          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
          <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+         <script src="https://code.highcharts.com/highcharts.js"></script>
+         <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+         <script src="https://code.highcharts.com/modules/exporting.js"></script>
+         <script src="https://code.highcharts.com/modules/export-data.js"></script>
+         <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
          <script src="JS\GRAFICO_1.js"></script>
          <script src="JS\GRAFICO_2.js"></script>
          <script src="JS\GRAFICO_3.js"></script>
          <script src="JS\GRAFICO_4.js"></script>
-         <script src="JS\GRAFICO_5.js"></script>
+         <script src="JS\TAXA_VIVOS.js"></script>
          
          <footer> Dashboard Hospitalar - Dados Neonatal <?php echo date("Y"); ?></footer>  
       </body>
