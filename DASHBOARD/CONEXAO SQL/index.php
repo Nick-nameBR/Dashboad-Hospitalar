@@ -40,8 +40,10 @@
 
 
 	//BUSCA DADOS GRAFICO
-	$data2015= Grafico2::select2015();
-	$data2000= Grafico2::select2000();
-	echo json_encode($data2000);
-	echo json_encode($data2015);
+	$data= Graficos::taxaVivos();
+	$data2= Graficos::taxaPrematuro();
+	$data3= Graficos::taxaApgar();
+	echo json_encode($data);
+	echo json_encode($data2);
+	echo json_encode($data3);
 ?>
